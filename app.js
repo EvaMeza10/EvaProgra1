@@ -1,9 +1,9 @@
-let gasolina = 100;
-while(gasolina > 0) {
+// imprimir la tabla del 10
+let base = 10;
+// limite de tabla
+let limite = 5;
 
-        console.log('Gasolina restante'+ gasolina);
-        
-// gasolina = gasolina - 1;
-gasolina--;
+for(let i = 1; i <= 10; i++) {
+        let resultado = base * i;
+        console.log( base + ' x ' + i + ' = ' + resultado),
 }
-console.log('Ya  o tiene gasolina');
