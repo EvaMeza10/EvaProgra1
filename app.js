@@ -1,18 +1,26 @@
-// Crear un algoritmo, que basado en la nota
-// Imprima si el alumn o aprueba la materia
-// Aprueba 60
-// Si el alumno tinen nota menor a 50
-// Imprimir un mensaje que diga:
-// Por favor estudie mas
+/*
+crea un algoritmo que permita determinar
+la calificacion en letras de un alumno
 
-let nota= 40;
-if (nota >= 60){
-    console.log("El alumno aprueba la clase");
+Si la nota se encuentra entre 100 a 90 = A
+Si la nota se encuentra entre 80 a 89 = B
+Si la nota se encuentra entre 70 a 79 = C
+Si la nota se encuentra entre 60 a 69 = D
+Si la nota se encuentra inferior a 60 = F
+*/
 
-}else if (nota < 50){
-    console.log("Por favor estudie mas");
+let nota = 70;
+let notaLetra = "";
 
+if ( nota >= 90 ){
+    notaLetra = "A";
+}else if( nota >= 80 ){
+    notaLetra = "B";
+}else if( nota >= 70 ){
+    notaLetra = "C";
+}else if( nota >= 60 ){
+    notaLetra = "D";
 }else {
-    console.log9m("El alumno NO aprueba la clase");
+    notaLetra = "F";
 }
-console.log("Fin del programa");
+console.log(nota + " es igual a " + notaLetra);
